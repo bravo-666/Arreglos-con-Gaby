@@ -1,6 +1,16 @@
 import java.util.Scanner;
 
 public class Arreglos {
+
+    public static void leerCalificaiones () {
+
+    }
+
+    public static void evaluarCalificaciones () {
+
+        
+    }
+
     public static void main(String[] args) {
         
         double [] calificaciones = new double [5];
