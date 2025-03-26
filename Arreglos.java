@@ -1,19 +1,22 @@
 import java.util.Scanner;
 
 public class Arreglos {
+        final int T = 25; //tamano maximo del grupo
 
-    public static void leerCalificaiones () {
-
+        public static void leerCalificaiones () {
+        
     }
 
     public static void evaluarCalificaciones () {
 
-        
     }
 
     public static void main(String[] args) {
+        double [] parcial1, parcial2, parcial3, parcial4; //se declaran los arreglos
+        double [] promInd;
+        boolean [] aprobados;
         
-        double [] calificaciones = new double [5];
+        double [] calificaciones = new double [5]; //estoy declarando y construyendo el arreglo 
         Scanner scn = new Scanner(System.in);
 
         for (int i = 0; i < calificaciones.length; i++) {
