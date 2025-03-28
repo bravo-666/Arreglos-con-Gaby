@@ -46,6 +46,14 @@ public class Arreglos {
         System.out.println(resultado);
     }
 
+    public static double calcularPromedioGrupo (double [] proms) {
+        double suma = 0;
+        for (int i = 0; i < proms.length; i++)
+            suma += proms[i]; //sumando promedios
+        return suma / proms.length; // proms es la longitud del arreglo o de alumnos en este caso
+    }
+    
+
     public static void main(String[] args) {
         double [] parcial1, parcial2, parcial3, parcial4; //se declaran los arreglos
         double [] promInd;
@@ -111,6 +119,10 @@ public class Arreglos {
         System.out.println("----------------------");
         System.out.println("estudiantes aprobados");
         imprimirResultados (aprobados);
+
+        System.out.println("-------------------------------");
+        System.out.println("el promedio del grupo es: " + calcularPromedioGrupo(promInd)); // se puede imprimir con solo mandarlo a llamrar 
+
         scn.close();
     }
     
